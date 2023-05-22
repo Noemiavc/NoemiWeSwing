@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calendar">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            app:titleTextColor="@color/white"
+            app:title="">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MOGUDES"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:id="@+id/myButton"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/edit"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"
+                android:layout_gravity="end|center_vertical" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E9E2E2"
+            android:orientation="vertical">
+
+            <!-- Agrega aquí tu contenido -->
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/totsBTN"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:text="TOTS"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/red"/>
+
+                    <Button
+                        android:id="@+id/amicsBTN"
+                        android:layout_width="wrap_content"
+                        android:text="d'amics"
+                        android:textSize="16sp"
+                        android:backgroundTint="#BDB2A9"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/asistireBTN"
+                        android:layout_width="wrap_content"
+                        android:text="assistiré"
+                        android:backgroundTint="#BDB2A9"
+                        android:layout_marginRight="15dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/filtres"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="20sp"
+                    android:text="Filtrar" />
+            </TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMogudes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

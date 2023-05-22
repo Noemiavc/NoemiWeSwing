@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Escola">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            app:titleTextColor="@color/white"
+            app:title=""
+            app:navigationIcon="@drawable/arrowback">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:text="ESCOLA"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D1C2B7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="#E9E2E2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:background="@android:color/transparent"
+                    app:cardCornerRadius="64dp">
+
+                    <ImageView
+                        android:id="@+id/esola_logo_escola"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/weswing" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/escola_nom_escola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="SWING MANIACS"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/escola_detalls_escola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="BARCELONA (ESPANYA) | ALUMNES: 83"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:textColor="#857E79"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/escola_socprofessor"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="12dp"
+                android:backgroundTint="@color/red"
+                android:text="En sóc professor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:background="#E9E2E2"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/asistencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:textSize="18dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:checked="true"
+                    android:text="N'he après aquí"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:background="#E9E2E2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Descripció"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:layout_height="45dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BCB1B1" />
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:text="El projecte Swing Maniacs neix a Barcelona de la mà de dos bojos pel swing, la Jana i el Jordi, amb la voluntat de fer créixer encara més el swing a Barcelona"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:background="#E9E2E2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mogudes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="15dp"
+                    android:background="@color/white"
+                    android:text="Mogudes"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="#E9E2E2"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text_view_professors"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="15dp"
+                    android:background="@color/white"
+                    android:text="Professors"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="15dp"
+                    android:background="@color/white"
+                    android:text="Alumnes"
+                    android:paddingLeft="17dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="#E9E2E2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="15dp"
+                    android:background="@color/white"
+                    android:text="Fotografíes"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BCB1B1" />
+
+                <TextView
+                    android:text="No hi ha fotografíes"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="18dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<string-array name="spinner_items">
+    <item>Masculino</item>
+    <item>Femenino</item>
+    <item>Otros</item>
+</string-array>
+
+    <string-array name="pais">
+        <item>España</item>
+        <item>Andorra La Vella</item>
+        <item>Francia</item>
+        <item>Alemanya</item>
+        <item>Italia</item>
+        <item>Suissa</item>
+    </string-array>
+
+    <string-array name="ciutats2">
+        <item>Totes les zones</item>
+        <item>Catalunya</item>
+        <item>Madrid</item>
+        <item>Valencia</item>
+        <item>Navarra</item>
+    </string-array>
+
+</resources>

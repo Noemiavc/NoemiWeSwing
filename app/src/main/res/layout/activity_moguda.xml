@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Moguda">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            app:navigationIcon="@drawable/arrowback"
+            app:title=""
+            app:titleTextColor="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="90dp"
+                android:text="MOGUDA"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="#D1C2B7"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomMoguda"
+                android:text="FESTA D'INICI DE TRIMESTRE I ..."
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/tipusMoguda"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:text="ALTRES - LINDY HOP"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/dataMoguda"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:text="22/04/2017 - 23/04/2017 (4 HORES)"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/white"  />
+            <Switch
+                android:id="@+id/asistencia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Hi assistiré"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="Organizador i localització: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <include
+                android:id="@+id/mogudaOrganitzador"
+                layout="@layout/escola_cardview" />
+
+            <TextView
+                android:text="Descripció"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_height="45dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:text="Festa d'inici de Trimestre I presentació del professors!
+                              Començem un nou curs ballant a la Festa d'Inici de Trimestre amb presentació dels Trio!! Horaris: de 22:00 a 22:30 - música swing amb Dj de 22:30 a 23:15 - Primera part Concert de 23:15 a 00:00 - Presentació de professors i actuacions de 00:00 a 00:45. - Segona part Concert de 00:45 a 01:30 - música swing amb Dj Preu: 6€ Alumnes Swing Maniacs 8€ BCNswing, Hoppers Garriga, Terrassahoppers, Crazy Legs, TGNswing i Bigpotters de Granollers 9€.
+                              Entrada general. 22/04/2017 - 23/04/2017 (4 Hores).
+                              Barcelona, España"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/assistentsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Assistents"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="15dp"
+                android:background="@color/white"
+                android:text="Fotografíes"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+                android:text="No hi ha fotografíes"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="18dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

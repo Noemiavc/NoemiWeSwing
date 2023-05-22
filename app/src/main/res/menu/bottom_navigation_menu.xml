@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_clock"
+        android:icon="@drawable/clock"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_papers"
+        android:icon="@drawable/paper"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_stars"
+        android:icon="@drawable/calendar"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/search"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/message"
+        android:title="" />
+
+</menu>

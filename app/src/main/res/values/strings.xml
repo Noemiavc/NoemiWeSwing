@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NoemiWeSwing</string>
+    <string-array name="genero">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

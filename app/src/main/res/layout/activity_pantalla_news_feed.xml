@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PantallaNewsFeed">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            app:titleTextColor="@color/white"
+            app:title="">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NOVETATS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:id="@+id/myButton"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"
+                android:layout_gravity="end|center_vertical" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E9E2E2"
+        android:orientation="vertical">
+
+        <!-- Agrega aquí tu contenido -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profilefoto1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/weswingicpetit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtview1"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:padding="10sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/hinttext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:hint="Fa 6 hores"
+                    android:layout_marginLeft="15dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/flecha1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea1"
+            android:layout_below="@id/hinttext1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCB1B1"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profilefoto2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/weswingicpetit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_below="@id/linea1"
+            android:id="@+id/txtview2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hinttext2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/flecha2"
+            android:layout_below="@id/linea1"
+            android:layout_toRightOf="@id/txtview2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea2"
+            android:layout_below="@id/hinttext2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCB1B1"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_below="@id/linea2"
+            android:id="@+id/profilefoto3"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/weswingicpetit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_below="@id/linea2"
+            android:id="@+id/txtview3"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hinttext3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview3"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/flecha3"
+            android:layout_below="@id/linea2"
+            android:layout_toRightOf="@id/txtview2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea3"
+            android:layout_below="@id/hinttext3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCB1B1"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_below="@id/linea3"
+            android:id="@+id/profilefoto4"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/weswingicpetit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_below="@id/linea3"
+            android:id="@+id/txtview4"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hinttext4"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview4"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_below="@id/linea3"
+            android:layout_toRightOf="@id/txtview4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea4"
+            android:layout_below="@id/hinttext4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCB1B1"
+            android:layout_marginTop="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_below="@id/linea4"
+            android:id="@+id/profilefoto5"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/weswingicpetit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_below="@id/linea4"
+            android:id="@+id/txtview5"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:padding="10sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hinttext5"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview5"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/flecha4"
+            android:layout_below="@id/linea3"
+            android:layout_toRightOf="@id/txtview5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea5"
+            android:layout_below="@id/hinttext4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCB1B1"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </LinearLayout>
+
